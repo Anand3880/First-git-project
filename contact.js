@@ -47,7 +47,7 @@ document.querySelectorAll(".contact-form").forEach((form) => {
                 body: JSON.stringify({ name, email: senderEmail, phone, message })
             });
 
-            status.textContent = "Request sent. Check the Submissions sheet before closing; this page can't verify Google's response. If no row appears, check the public web app deployment settings in SHEETS_SETUP.md.";
+            status.textContent = "Done.";
         } catch (error) {
             status.textContent = "We couldn't submit your message. Please try again later.";
         } finally {
